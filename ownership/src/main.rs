@@ -1,7 +1,9 @@
-use std::thread::scope;
-
 fn main() {
-    let s1 = String::from("hello");
-    let s2 = s1.clone();
-    println!("s1={s1}, s2={s2}")
+    let s = String::from("hello");
+    eat(s);
+    println!("{s}");
+}
+
+fn eat(text: String) {
+    println!("食べた: {text}");
 }
